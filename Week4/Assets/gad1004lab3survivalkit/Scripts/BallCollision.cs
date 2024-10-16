@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BallCollision : MonoBehaviour {
 
@@ -34,7 +35,11 @@ public class BallCollision : MonoBehaviour {
         if(col.gameObject.tag == "LeftWall" || col.gameObject.tag == "RightWall")
         {
             //TODO add your Destroy code here-destroy the ball
-            Destroy(ball);
+            //Destroy(ball);
+            
+            //TODO Get the active scene's build index and reload it
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.buildIndex);
         }
     }
 }
