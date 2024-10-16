@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+Week2/Assets/Characters/DevilShadowv2/DevilShadow/** filter=lfs diff=lfs merge=lfs -text
+Week2/Assets/Backgrounds/** filter=lfs diff=lfs merge=lfs -text
