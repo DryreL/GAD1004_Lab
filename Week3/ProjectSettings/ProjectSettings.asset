@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DryreL
-  productName: GAD1004_Lab // Cube Spawner - Week 3
+  productName: GAD1004_Week3
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -161,7 +161,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DryreL.GAD1004-Lab----Cube-Spawner---Week-3
+    Standalone: com.DryreL.GAD1004-Week3
   buildNumber:
     Standalone: 0
     VisionOS: 0
