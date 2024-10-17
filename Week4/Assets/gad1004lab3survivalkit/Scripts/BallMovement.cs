@@ -16,11 +16,11 @@ public class BallMovement : MonoBehaviour
         int randomNumber = Random.Range(0, 2);
         if (randomNumber == 0)
         {
-            rb2d.velocity = new Vector2(1, 1) * speed;
+            rb2d.linearVelocity = new Vector2(1, 1) * speed;
         }
         else
         {
-            rb2d.velocity = new Vector2(2, 1) * speed;
+            rb2d.linearVelocity = new Vector2(2, 1) * speed;
         }
     }
 

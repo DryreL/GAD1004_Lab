@@ -1,21 +1,19 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class EventSystemChecker : MonoBehaviour
 {
-    //public GameObject eventSystem;
-
-	// Use this for initialization
-	void Awake ()
-	{
-	    if(!FindObjectOfType<EventSystem>())
+    // Use this for initialization
+    void Awake()
+    {
+        // Use the new API: FindFirstObjectByType or FindAnyObjectByType
+        if (UnityEngine.Object.FindAnyObjectByType<EventSystem>() == null)  // Faster check for any EventSystem
         {
-           //Instantiate(eventSystem);
+            // If no EventSystem exists, create a new one
             GameObject obj = new GameObject("EventSystem");
             obj.AddComponent<EventSystem>();
-            obj.AddComponent<StandaloneInputModule>().forceModuleActive = true;
+            obj.AddComponent<StandaloneInputModule>();  // No need to set forceModuleActive anymore
         }
-	}
+    }
 }

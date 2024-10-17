@@ -20,6 +20,6 @@ public class RacketMovement : MonoBehaviour
     {
         float v = Input.GetAxisRaw(axis);
 
-        rb2d.velocity = new Vector2(2, v) * Speed;
+        rb2d.linearVelocity = new Vector2(2, v) * Speed;
     }
 }

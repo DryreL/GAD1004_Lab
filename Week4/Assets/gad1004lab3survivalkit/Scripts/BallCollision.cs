@@ -27,9 +27,9 @@ public class BallCollision : MonoBehaviour {
         if (col.gameObject.tag == "LeftRacket" || col.gameObject.tag == "RightRacket") 
         {
             Vector2 vel;
-            vel.x = GetComponent<Rigidbody2D>().velocity.x;
-            vel.y = (GetComponent<Rigidbody2D>().velocity.y / 2.0f) + (col.collider.attachedRigidbody.velocity.y / 3.0f);
-            GetComponent<Rigidbody2D>().velocity = vel;
+            vel.x = GetComponent<Rigidbody2D>().linearVelocity.x;
+            vel.y = (GetComponent<Rigidbody2D>().linearVelocity.y / 2.0f) + (col.collider.attachedRigidbody.linearVelocity.y / 3.0f);
+            GetComponent<Rigidbody2D>().linearVelocity = vel;
         }
 
         if(col.gameObject.tag == "LeftWall" || col.gameObject.tag == "RightWall")

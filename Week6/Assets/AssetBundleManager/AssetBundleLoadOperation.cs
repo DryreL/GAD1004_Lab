@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor.SceneManagement;
 using System.Collections;
 
 namespace AssetBundles
@@ -45,10 +46,23 @@ namespace AssetBundles
 				return;
 			}
 			
+			// Assuming 'm_Operation' is an AsyncOperation or similar.
 			if (isAdditive)
-				m_Operation = UnityEditor.EditorApplication.LoadLevelAdditiveAsyncInPlayMode(levelPaths[0]);
+			{
+				// Load scene additively
+				m_Operation = EditorSceneManager.LoadSceneAsyncInPlayMode(
+					levelPaths[0], 
+					new LoadSceneParameters(LoadSceneMode.Additive)
+				);
+			}
 			else
-				m_Operation = UnityEditor.EditorApplication.LoadLevelAsyncInPlayMode(levelPaths[0]);
+			{
+				// Load scene normally (single mode)
+				m_Operation = EditorSceneManager.LoadSceneAsyncInPlayMode(
+					levelPaths[0], 
+					new LoadSceneParameters(LoadSceneMode.Single)
+				);
+			}
 		}
 		
 		public override bool Update ()

@@ -38,20 +38,22 @@ namespace UnityStandardAssets.CrossPlatformInput
         private void Start()
         {
 #if UNITY_EDITOR
-            if (Application.isPlaying) //if in the editor, need to check if we are playing, as start is also called just after exiting play
+            if (Application.isPlaying) // If in the editor, check if we are playing, as Start is also called just after exiting play
 #endif
             {
-                UnityEngine.EventSystems.EventSystem system = GameObject.FindObjectOfType<UnityEngine.EventSystems.EventSystem>();
+                // Use the new API: FindAnyObjectByType
+                UnityEngine.EventSystems.EventSystem system = UnityEngine.Object.FindAnyObjectByType<UnityEngine.EventSystems.EventSystem>();
 
                 if (system == null)
-                {//the scene have no event system, spawn one
+                {
+                    // The scene has no event system, so spawn one
                     GameObject o = new GameObject("EventSystem");
-
                     o.AddComponent<UnityEngine.EventSystems.EventSystem>();
                     o.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
                 }
             }
         }
+
 
 #if UNITY_EDITOR
 
