@@ -1,8 +1,9 @@
-# Game Development Lecture Process (2019) - Bahçeşehir University
+# Game Development Lecture Process (GAD1004)
 
 ## Introduction
 
-This repository provides an overview of the **Game Development Lecture Series** conducted at **Bahçeşehir University** in 2019. The lecture code is GAD1004. The series introduces fundamental and advanced concepts of game development, with practical examples and hands-on sessions. The lecture process is designed for students to gain both theoretical knowledge and practical skills necessary for game development.
+This repository provides an overview of the **Game Development Lecture Series** conducted at **Bahçeşehir University** in 2019. The lecture code was GAD1004. The series introduces fundamental concepts of game development, with practical examples and hands-on sessions.
+The lecture process is designed for students to gain both theoretical knowledge and practical skills necessary for game development.
 
 Each project presented during the semester covers different aspects of game development, ranging from asset manipulation to creating fully functioning games from scratch. The following sections summarize the key topics and provide links to the preview videos for each project.
 
@@ -10,7 +11,7 @@ All these projects were previously made in Unity 2019 version. Now it has been u
 
 ## Table of Contents
 
-- [Lecture Videos](#lecture-videos)
+- [Lab Preview](#lab-preview)
 - [Course Overview](#course-overview)
 - [Installation & Setup](#installation--setup)
 - [Usage](#usage)
@@ -37,16 +38,16 @@ Preview GIFs of the six projects covered in the lecture series.
    ![4](https://i.imgur.com/H16PiK3.gif)
 
 5. **Maze Game**  
-   ![5](https://i.imgur.com/k1ie2K5.gif)
+   ![5](https://i.imgur.com/vRc58J6.gif)
 
 6. **Ready-made 3D Game**  
-   ![6](https://i.imgur.com/Iy7SPVp.gif)
+   ![6](https://i.imgur.com/n65ug0C.gif)
 
 ## Course Overview
 
 The course covers six different projects that focus on various aspects of game development:
 
-1. **Ready-made 2D Game**: In this project, students learn how to use a pre-existing game project and modify it by making two specific changes to demonstrate understanding of asset manipulation and customization.
+1. **Ready-Made 2D Game**: In this project, students learn how to use a pre-existing game project and modify it by making two specific changes to demonstrate understanding of asset manipulation and customization.
 
 2. **Screensaver**: This project focuses on creating a simple screensaver using basic animation techniques. Students build it entirely from scratch, applying their knowledge of loops and animation.
 
@@ -56,7 +57,7 @@ The course covers six different projects that focus on various aspects of game d
 
 5. **Maze Game**: This project adds a sense of atmosphere and challenge with a 3D maze where players navigate using a flashlight, highlighting lighting techniques and level design.
 
-6. **Ready-made 3D Game**: Students dive deeper into character animations by using a ready-made game asset, retargeting character animations, and making additional modifications to personalize the project.
+6. **Ready-Made 3D Game**: Students dive deeper into character animations by using a ready-made game asset, retargeting character animations, and making additional modifications to personalize the project.
 
 ## Installation & Setup
 
@@ -83,7 +84,7 @@ After setting up the environment, open the Unity project for the **Cube Spawner*
 
 ## Dependencies
 
-- **Unity 6 LTS**
+- Unity 6 LTS
 
 ## Troubleshooting
 
@@ -99,4 +100,5 @@ If you encounter issues running the projects or viewing the videos, consider the
 
 ## License
 
-This content is licensed under the [Creative Commons License](https://creativecommons.org/licenses/by/4.0/). You are free to share and adapt the material as long as proper attribution is given.
+This content is licensed under the [Creative Commons License](https://creativecommons.org/licenses/by/4.0/).
+You are free to share and adapt the material as long as proper attribution is given.
